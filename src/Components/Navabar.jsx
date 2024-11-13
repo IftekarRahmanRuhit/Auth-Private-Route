@@ -19,8 +19,6 @@ const Navabar = () => {
 
 
 
-
-
   const links = (
     <>
       <li><NavLink to='/'>Home</NavLink></li>
@@ -65,7 +63,7 @@ const Navabar = () => {
         </div>
         <div className="navbar-end">
           {
-            user?
+            user ?
             <>
             <span>{user?.email}</span>
             <a onClick={handleSignOut} className="btn">Sign Out</a>
